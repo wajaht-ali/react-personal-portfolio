@@ -1,9 +1,29 @@
-import React from 'react'
-import { motion } from "framer-motion";
+import React, { useRef } from 'react'
+import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/logo.png";
+// import { useRef } from 'react';
+
 const Home = () => {
+  const clientCount= useRef(null);
+  const projectCount= useRef(null);
+
+  const animationClientsCount = () => {
+    animate(0,100, {
+      duration: 1,
+      onUpdate: (v) => clientCount.current.textContent = v.toFixed(),
+    
+    });
+  };
+
+  const animationProjectsCount = () => {
+    animate(0,500, {
+      duration: 1,
+      onUpdate: (n) => projectCount.current.textContent = n.toFixed(),
+    
+    });
+  }
 
   const animations = {
     h1: {
@@ -49,16 +69,17 @@ const Home = () => {
           </div>
           <article>
             <p>
-              +<span>100</span>
+              +<motion.span whileInView={animationClientsCount} ref={clientCount}>
+              </motion.span>
             </p>
             <span>Clients WorldWide</span>
           </article>
           <aside>
             <article>
               <p>
-                +<span>500</span>
+                +<motion.span whileInView={animationProjectsCount} ref={projectCount}></motion.span>
               </p>
-              <span>Projects Made</span>
+              <span>Projects Done</span>
             </article>
 
             <article data-special>

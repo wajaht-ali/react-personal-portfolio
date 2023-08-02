@@ -13,9 +13,11 @@
                 border-top: 1px solid $color2;
                 height: 100%;
                 padding-top: 6rem;
+                // padding-left: 3rem;
 
                 >h1 {
                     font: 900 4rem $text1;
+                    // padding-left: 3rem;
                 }
 
                 .typewriterpara {
@@ -50,6 +52,7 @@
                             display: flex;
                             padding: .85rem 2.3rem;
                             align-items: center;
+
                             &:hover {
                                 background-color: #f3f3f3;
                             }
@@ -62,6 +65,7 @@
                     justify-content: space-between;
                     width: 70%;
                 }
+
                 article {
                     margin: 2rem 0;
                     width: 10rem;
@@ -79,8 +83,21 @@
                         left: 20%;
                         z-index: -1;
                         border-radius: 50px;
-                    } 
+                    }
+
+                    >p {
+                        font: 900 2rem $text1;
+                    }
+
+                    >span {
+                        font: 500 1rem $text2;
+                    }
                 }
+            article[data-special] {
+                // transform: scale(2);
+                width: 16rem;
+                padding-left: 3rem;
+            }
             }
         }
 
