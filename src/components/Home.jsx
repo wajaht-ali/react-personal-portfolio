@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/logo.png";
 const Home = () => {
 
@@ -35,13 +35,13 @@ const Home = () => {
             Hii, I Am <br /> Wajahat Ali
           </motion.h1>
 
-          {/* <Typewriter options={{
+          <Typewriter options={{
             strings: ["A Developer", "A Designer", "A Creator"],
             autoStart: true,
             loop: true, 
             cursor: "",
             wrapperClassName: 'typewriterpara',
-          }} /> */}
+          }} />
 
           <div>
             <a href="mailto:contact.chwajahat@gmail.com">Hire Me</a>
@@ -73,6 +73,7 @@ const Home = () => {
       <section>
           <img src={me} alt="wajahat" />
       </section>
+      <BsChevronDown />
     </div>
   )
 }
