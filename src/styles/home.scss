@@ -12,7 +12,7 @@
             >div {
                 border-top: 1px solid $color2;
                 height: 100%;
-                padding-top: 6rem;
+                padding-top: 1rem;
                 // padding-left: 3rem;
 
                 >h1 {
@@ -28,7 +28,7 @@
 
                 >div {
                     display: flex;
-                    margin: 5rem 0;
+                    margin: 1rem 0;
                     width: 70%;
                     gap: 4rem;
                     align-items: center;
@@ -37,11 +37,14 @@
                         &:first-of-type {
                             background-color: $color3;
                             color: $color1;
+                            font: 600 1rem $text2;
                             transition: all .3s;
                             padding: 1rem 2.5rem;
 
                             &:hover {
-                                background-color: $color3_1;
+                                color: $color3;
+                                background-color: $color4;
+                                border: 1px solid $color3;
                             }
                         }
 
@@ -54,7 +57,9 @@
                             align-items: center;
 
                             &:hover {
-                                background-color: #f3f3f3;
+                                color: $color4;
+                                background-color: $color3;
+                                border: 2px solid $color4;
                             }
                         }
                     }
@@ -93,11 +98,12 @@
                         font: 500 1rem $text2;
                     }
                 }
-            article[data-special] {
-                // transform: scale(2);
-                width: 16rem;
-                padding-left: 3rem;
-            }
+
+                article[data-special] {
+                    // transform: scale(2);
+                    width: 16rem;
+                    padding-left: 3rem;
+                }
             }
         }
 
@@ -132,7 +138,7 @@
         font-size: 4rem;
         color: $color5;
         left: 50%;
-        bottom: 5%;
+        bottom: 0%;
         transform: translateX(-50%);
         animation: animateSvg .7s infinite linear alternate;
     }

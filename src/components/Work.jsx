@@ -10,13 +10,13 @@ const Work = () => {
             <section>
                 <Carousel 
                     showArrows={false}
-                    showIndicators={false}
-                    showStatus={false}
+                    // showIndicators={false}
+                    // showStatus={false}
                     showThumbs={false}
-                    interval={2000}
+                    interval={2500}
                     infiniteLoop={true}
                     autoPlay={true}
-                >
+                     >
                     {
                         data.projects.map(i => (
                             <div className='workItem' key={i.title}>
