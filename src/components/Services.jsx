@@ -1,29 +1,31 @@
 import React from 'react'
+import {motion} from 'framer-motion';
+import { AiFillIeCircle, AiFillAndroid, AiFillWindows} from 'react-icons/ai';
 
 const Services = () => {
   return (
     <div id='services'>
         <h2>Services</h2>
         <section>
-            <Motion.dev className="serviceBox1">
+            <motion.div className="serviceBox1">
                 <h3>2+</h3>
                 <p>Years of experience</p>
-            </Motion.dev>
+            </motion.div>
 
-            <Motion.dev className="serviceBox1">
-                <h3>2+</h3>
-                <p>Years of experience</p>
-            </Motion.dev>
+            <motion.div className="serviceBox2">
+                <AiFillIeCircle />
+                <span>Web Development</span>
+            </motion.div>
 
-            <Motion.dev className="serviceBox1">
-                <h3>2+</h3>
-                <p>Years of experience</p>
-            </Motion.dev>
-            
-            <Motion.dev className="serviceBox1">
-                <h3>2+</h3>
-                <p>Years of experience</p>
-            </Motion.dev>
+            <motion.div className="serviceBox3">
+                <AiFillAndroid />
+                <span>App Development</span>
+            </motion.div>
+
+            <motion.div className="serviceBox4">
+                <AiFillWindows />
+                <span>Desktop Development</span>
+            </motion.div>
         </section>
     </div>
   )

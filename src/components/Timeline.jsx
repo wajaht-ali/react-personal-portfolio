@@ -21,7 +21,7 @@ const Timeline = () => {
 const TimelineItem = ({heading, text, index}) => (
     <div 
     //" '${ '}' "
-    className={"timelineItem '${index % 2 === 0 ? 'leftTimeline' : 'rightTimeline'}' "}>
+    className={'timelineItem ${ index % 2 === 0 ? "leftTimeline" : "rightTimeline"} '}>
         
         <div>
         <h2>{heading}</h2>

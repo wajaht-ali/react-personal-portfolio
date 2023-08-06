@@ -31,6 +31,13 @@
         position: relative;
         background-color: inherit;
         width: 50%;
+
+        &:nth-child(odd){
+            text-align: right;
+        }
+        &:nth-child(even){
+            text-align: left;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -42,6 +49,7 @@
             border-radius: 50%;
             top: 45px;
             z-index: 1;
+            animation: animate .7s ease-in infinite alternate;
         }
 
         >div {
@@ -57,9 +65,14 @@
     }
     .rightTimeline {
         left: 50%;
-        
         &::after {
             left: -16px
         }
+    }
+}
+
+@keyframes animate {
+    to {
+        transform: translateY(5px);
     }
 }
