@@ -3,6 +3,18 @@ import {motion} from 'framer-motion';
 import { AiFillIeCircle, AiFillAndroid, AiFillWindows} from 'react-icons/ai';
 
 const Services = () => {
+
+    const animations = {
+        whileInView: {
+            x:0,
+            y:0,
+            opacity: 1,
+        },
+        one: {
+            x:"-100%"
+        }
+    }
+
   return (
     <div id='services'>
         <h2>Services</h2>
