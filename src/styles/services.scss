@@ -14,6 +14,10 @@
         border-bottom: 1px solid $color4;
         padding: .5rem;
         margin: auto;
+        transition: .3s all;
+        &:hover {
+            transform: scale(1.1);
+        }
         // align-items: center;
     }
 
@@ -61,6 +65,14 @@
             >h3 {
                 font: 100 5rem $text1;
             }
+            >p {
+                font: 900 1.2rem $text2;
+                letter-spacing: 3px;
+            }
+        }
+
+        .serviceBox4 {
+            grid-column: 2/4;
         }
     }
 }
